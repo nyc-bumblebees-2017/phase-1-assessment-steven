@@ -5,7 +5,7 @@ RSpec.describe RoadTrip do
   let(:segments) { [double('Segment', miles: 500), double('Segment', miles: 750)] }
   let(:road_trip) { RoadTrip.new(name: 'Trip to SF', participants: %w(Juanita Sam Nadia), segments: segments) }
 
-  describe 'Attributes' do
+  describe 'attributes' do
     it 'has a name' do
       expect(road_trip.name).to eq 'Trip to SF'
     end
@@ -24,26 +24,27 @@ RSpec.describe RoadTrip do
     end
   end
 
-  describe '#add_segment' do
-    it 'adds object to segement collection' do
-      new_segment = double('New Segment')
-      road_trip.add_segment(new_segment)
-      expect(road_trip.segments).to include new_segment
-    end
-  end
-
-  describe 'distance calculations' do
-    describe '#total_miles' do
-      it 'sums the miles of each segment' do
-        expect(road_trip.total_miles).to eq 1250
+  describe 'working with segments' do
+    describe '#add_segment' do
+      it 'adds object to segement collection' do
+        new_segment = double('New Segment')
+        road_trip.add_segment(new_segment)
+        expect(road_trip.segments).to include new_segment
       end
     end
 
-    describe '#average_miles_per_segment' do
-      it 'averages the miles of the trip over the segments' do
-        expect(road_trip.average_miles_per_segment).to eq 625
+    describe 'distance calculations' do
+      describe '#total_miles' do
+        it 'sums the miles of each segment' do
+          expect(road_trip.total_miles).to eq 1250
+        end
+      end
+
+      describe '#average_miles_per_segment' do
+        it 'averages the miles of the trip over the segments' do
+          expect(road_trip.average_miles_per_segment).to eq 625
+        end
       end
     end
   end
-
 end
