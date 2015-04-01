@@ -2,11 +2,10 @@ require_relative '../road_trip'
 
 RSpec.describe RoadTrip do
 
-  let(:segment) { double('Segment') }
-  let(:road_trip) { RoadTrip.new(name: 'Trip to SF', participants: %w(Juanita Sam Nadia), segments: [segment]) }
+  let(:segments) { [double('Segment', miles: 500), double('Segment', miles: 750)] }
+  let(:road_trip) { RoadTrip.new(name: 'Trip to SF', participants: %w(Juanita Sam Nadia), segments: segments) }
 
   describe 'Attributes' do
-
     it 'has a name' do
       expect(road_trip.name).to eq 'Trip to SF'
     end
@@ -27,16 +26,13 @@ RSpec.describe RoadTrip do
 
   describe '#add_segment' do
     it 'adds object to segement collection' do
-      new_segment = double('Segment')
+      new_segment = double('New Segment')
       road_trip.add_segment(new_segment)
       expect(road_trip.segments).to include new_segment
     end
   end
 
-  describe 'distances' do
-    let(:segments) { [double('Segment', miles: 500), double('Segment', miles: 750)] }
-    let(:road_trip) { RoadTrip.new(segments: segments) }
-
+  describe 'distance calculations' do
     describe '#total_miles' do
       it 'sums the miles of each segment' do
         expect(road_trip.total_miles).to eq 1250
