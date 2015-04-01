@@ -24,7 +24,7 @@ RSpec.describe RoadTrip do
     end
   end
 
-  describe 'working with segments' do
+  describe 'working with segments', { pending: true } do
     describe '#add_segment' do
       it 'adds object to segement collection' do
         new_segment = double('New Segment')
