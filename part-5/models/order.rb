@@ -5,9 +5,9 @@ class Order
 
   def initialize(options={})
     @shipping_address = options.fetch(:shipping_address)
-    self.customer = options.fetch(:customer)
-
     @products = []
+
+    self.customer = options.fetch(:customer)
   end
 
   def customer=(customer)
