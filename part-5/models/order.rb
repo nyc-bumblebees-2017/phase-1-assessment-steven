@@ -17,6 +17,7 @@ class Order
 
   def add_product(product)
     products << product
+    product.add_order(self)
   end
-  
+
 end
