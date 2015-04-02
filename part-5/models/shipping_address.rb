@@ -3,7 +3,7 @@ class ShippingAddress
   attr_reader :customer
   attr_accessor :street, :city, :state, :zip_code, :label
 
-  def initialize(options={})
+  def initialize(args = {})
     @street = options.fetch(:street)
     @city = options.fetch(:city)
     @state = options.fetch(:state)

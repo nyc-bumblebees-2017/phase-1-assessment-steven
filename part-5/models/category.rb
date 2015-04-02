@@ -3,7 +3,7 @@ class Category
   attr_accessor :name, :description
   attr_reader :products
 
-  def initialize(options={})
+  def initialize(args = {})
     @name = options.fetch(:name)
     @description = options.fetch(:descriptions)
     @products = []

@@ -3,7 +3,7 @@ class Customer
   attr_accessor :first_name, :last_name
   attr_reader :orders, :shipping_addresses
 
-  def initialize(options={})
+  def initialize(args = {})
     @first_name = options.fetch(:first_name)
     @last_name = options.fetch(:last_name)
     @orders = []

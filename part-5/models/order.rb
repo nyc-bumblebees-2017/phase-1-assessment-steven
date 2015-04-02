@@ -3,7 +3,7 @@ class Order
   attr_reader :customer, :products
   attr_accessor :shipping_address
 
-  def initialize(options={})
+  def initialize(args = {})
     @shipping_address = options.fetch(:shipping_address)
     @products = []
 
