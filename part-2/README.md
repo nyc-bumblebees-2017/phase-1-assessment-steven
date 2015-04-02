@@ -17,13 +17,13 @@ In the tests for the `SockDrawer` class is an example group `"#match_for"` that 
 
 *Do not modify the tests.*
 
-### Release 1:  `SockDrawer#release_pair`
-In the tests for the `SockDrawer` class is an example group `"#release_pair"`.  The example group is currently marked as pending.
+### Release 1:  `SockDrawer#random_pair`
+In the tests for the `SockDrawer` class is an example group `"#random_pair"`.  The example group is currently marked as pending.
 
 On Line 46, change `true` to `false`.  The line should then read ...
 
 ```ruby
-describe "#release_pair", { pending: false } do
+describe "#random_pair", { pending: false } do
 ```
 
 After making the change, run the tests to see the examples in this group fail.  Update the `SockDrawer` class in `sock_drawer.rb` to make the tests pass.
