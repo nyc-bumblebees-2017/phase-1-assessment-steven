@@ -4,10 +4,10 @@ class Order
   attr_accessor :shipping_address
 
   def initialize(args = {})
-    @shipping_address = options.fetch(:shipping_address)
+    @shipping_address = args.fetch(:shipping_address)
     @products = []
 
-    self.customer = options.fetch(:customer)
+    self.customer = args.fetch(:customer)
   end
 
   def customer=(customer)

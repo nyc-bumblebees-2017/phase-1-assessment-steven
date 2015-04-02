@@ -4,8 +4,8 @@ class Customer
   attr_reader :orders, :shipping_addresses
 
   def initialize(args = {})
-    @first_name = options.fetch(:first_name)
-    @last_name = options.fetch(:last_name)
+    @first_name = args.fetch(:first_name)
+    @last_name = args.fetch(:last_name)
     @orders = []
     @shipping_addresses = []
   end
