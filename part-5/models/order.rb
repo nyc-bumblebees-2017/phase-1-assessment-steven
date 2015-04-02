@@ -12,7 +12,7 @@ class Order
 
   def customer=(customer)
     @customer = customer
-    customer.add_orders(self)
+    customer.add_order(self)
   end
 
   def add_product(product)
