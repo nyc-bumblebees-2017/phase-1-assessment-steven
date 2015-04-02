@@ -1,10 +1,11 @@
 class Product
 
   attr_reader :categories
+  attr_accessor :name, :description
 
   def initialize(args = {})
-    @name = options.fetch(:name)
-    @description = options.fetch(:description)
+    @name = args.fetch(:name)
+    @description = args.fetch(:description)
     @categories = []
     @orders = []
   end

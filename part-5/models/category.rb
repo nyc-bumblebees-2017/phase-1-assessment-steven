@@ -4,8 +4,8 @@ class Category
   attr_reader :products
 
   def initialize(args = {})
-    @name = options.fetch(:name)
-    @description = options.fetch(:descriptions)
+    @name = args.fetch(:name)
+    @description = args.fetch(:descriptions)
     @products = []
   end
 
