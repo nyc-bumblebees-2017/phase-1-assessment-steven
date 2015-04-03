@@ -1,0 +1,2 @@
+class SleepingBag
+end
