@@ -20,7 +20,7 @@ RSpec.describe RoadTrip do
     end
 
     it 'has segments' do
-      expect(road_trip.segments).to match_array [segment]
+      expect(road_trip.segments).to match_array segments
     end
   end
 
