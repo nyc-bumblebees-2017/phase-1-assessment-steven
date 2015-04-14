@@ -8,9 +8,9 @@ You are free to use online resources, notes, and even ask instructors for help. 
 
 Do not build more complexity than is explicitly required. We are not impressed by crystal palaces of magnificent syntax. We are impressed by readable solutions that meet requirements and a good verbal explaination of what you did.
 
-- [Part 1 - Classes](part-1/)
-- [Part 2 - Algorithms/Problem Solving](part-2/)
-- [Part 3 - Object Oriented Design](part-3/)
+- [Part 1 - Define a Class](part-1/)
+- [Part 2 - Work with a Collection](part-2/)
+- [Part 3 - Refactor](part-3/)
 - [Part 4 - SQL Queries](part-4/)
 - [Part 5 - Schema Design](part-5/)
 
