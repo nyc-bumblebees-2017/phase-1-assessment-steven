@@ -1,7 +1,7 @@
 # Part 3: Refactor
 
 ## Summary
-In Part 3 of the assessment, we'll refactor some provided code.  A number of class have been provided.  Each class is tested for its behaviors.  When these classes were written, knowledge about our application was often times duplicated in multiple places.
+In Part 3 of the assessment, we'll refactor some provided code.  A number of class have been provided.  Each class is tested for its behaviors.  When these classes were written, knowledge about our application was often times duplicated in multiple places; in other words, the code is not DRY.
 
 ## Release 0: Improve Code
 Each class in this part of the assessment is fully tested and all the tests pass.  Apply object-oriented principles to improve the quality of the code.
