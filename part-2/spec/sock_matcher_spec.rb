@@ -27,6 +27,10 @@ describe SockMatcher do
     expect(matcher.match? sock, other_color_sock).to be false
   end
 
+  it "doesn't match a sock with itself" do
+    expect(matcher.match? sock, sock).to be false
+  end
+
   it "only matches socks" do
     expect(matcher.match? sock, shirt).to be false
   end
