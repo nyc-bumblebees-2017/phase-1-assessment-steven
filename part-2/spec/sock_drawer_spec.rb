@@ -63,7 +63,7 @@ describe SockDrawer do
         non_matching_socks = [left_white_sock, left_red_sock]
         drawer_with_no_matching_socks = SockDrawer.new(socks: non_matching_socks, matcher: matcher)
 
-        expect(drawer_with_no_matching_socks.random_pair).to be_empty
+        expect(drawer_with_no_matching_socks.random_pair_of_socks).to be_empty
       end
     end
   end
