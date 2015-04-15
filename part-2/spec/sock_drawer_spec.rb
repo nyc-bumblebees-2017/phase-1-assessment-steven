@@ -23,12 +23,12 @@ describe SockDrawer do
   describe "#match_for" do
     let(:right_red_sock) { Sock.new(brand: "Nike", style: "quarter", color: "red") }
 
-    context "when it has matching socks" do
+    context "when it has a matching sock" do
       it "returns a matching sock" do
         expect(drawer.match_for right_red_sock).to eq left_red_sock
       end
 
-      it "releases a matching sock from its collection of socks" do
+      it "removes the matching sock from its collection of socks" do
         drawer.match_for(right_red_sock)
         expect(drawer.socks).to_not include left_red_sock
       end
@@ -44,12 +44,12 @@ describe SockDrawer do
   end
 
   describe "#random_pair", { pending: true } do
-    context "when it has pairs of matching socks" do
-      it "returns one of its pairs of" do
+    context "when it has one or more pairs of matching socks" do
+      it "returns one of its pairs of socks" do
         expect(drawer.random_pair).to match_array [left_white_sock, right_white_sock]
       end
 
-      it "releases paired socks from its collection of socks" do
+      it "removes paired socks from its collection of socks" do
         drawer.random_pair
 
         [left_white_sock, right_white_sock].each do |paired_sock|
