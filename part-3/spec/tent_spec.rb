@@ -1,4 +1,4 @@
-require "spec_helper"
+require_relative "spec_helper"
 
 describe Tent do
   let(:tent) { Tent.new(capacity: 4) }

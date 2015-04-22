@@ -1,4 +1,4 @@
-require "spec_helper"
+require_relative "spec_helper"
 
 describe IncidentReport do
   let (:report) { IncidentReport.new(description: "Loud neighbors.", reporter: "Gary Smith") }
