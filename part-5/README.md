@@ -7,7 +7,7 @@ In this challenge you will need to design the database to persist the data provi
 The basis of this application is an online store. This has been simplified to try to focus solely on what data is required to fulfill the model's intended concept and show how these models would relate to each other.
 
 ## Release 0: Model Attributes
-Using SQL Designer, create the required tables with the corresponding columns that would support the data requirements of each model found in the `part-5/models` directory.
+Using [SQL Designer](https://socrates.devbootcamp.com/sql), create the required tables with the corresponding columns that would support the data requirements of each model found in the `part-5/models` directory.
 
 ## Release 1: Relationships
 Add the supporting foreign keys and/or join tables to allow the required one-to-many and many-to-many relationships.
