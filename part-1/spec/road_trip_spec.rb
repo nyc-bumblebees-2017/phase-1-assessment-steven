@@ -2,6 +2,8 @@ require_relative '../road_trip'
 
 RSpec.describe RoadTrip do
 
+  # The "double" objects in the segments array are objects
+  # that behave like Segment objects. They will respond to calling miles.
   let(:segments) { [double('Segment', miles: 500), double('Segment', miles: 750)] }
   let(:road_trip) { RoadTrip.new(name: 'Trip to SF', participants: %w(Juanita Sam Nadia), segments: segments) }
 
