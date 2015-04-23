@@ -12,18 +12,18 @@ The `SockDrawer` class is somewhat complete.  We can initialize an instance of `
 - A sock drawer will be able to match two of its own socks.
 
 ## Releases
-### Release 0: `SockDrawer#match_for`
-In the tests for the `SockDrawer` class is an example group `"#match_for"` that describes what should happen when a sock drawer matches one of its socks to a given sock.  Run the tests.  The three tests in the example group should be failing.  Update the `SockDrawer` class in `sock_drawer.rb` to make the tests pass.
+### Release 0: `SockDrawer#supply_match_for`
+In the tests for the `SockDrawer` class is an example group `"#supply_match_for"` that describes what should happen when a sock drawer matches one of its socks to a given sock.  Run the tests.  The three tests in the example group should be failing.  Update the `SockDrawer` class in `sock_drawer.rb` to make the tests pass.
 
 *Do not modify the tests.*
 
-### Release 1:  `SockDrawer#random_pair_of_socks`
-In the tests for the `SockDrawer` class is an example group `"#random_pair_of_socks"`.  The example group is currently marked as pending.
+### Release 1:  `SockDrawer#supply_random_pair_of_socks`
+In the tests for the `SockDrawer` class is an example group `"#supply_random_pair_of_socks"`.  The example group is currently marked as pending.
 
 On Line 46, change `true` to `false`.  The line should then read ...
 
 ```ruby
-describe "#random_pair_of_socks", { pending: false } do
+describe "#supply_random_pair_of_socks", { pending: false } do
 ```
 
 After making the change, run the tests to see the examples in this group fail.  Update the `SockDrawer` class in `sock_drawer.rb` to make the tests pass.
