@@ -1,14 +1,16 @@
 # Part 3: Refactor
 
 ## Summary
-In Part 3 of the assessment, we'll refactor some provided code.  A number of classes have been provided.  Each class is tested for its behaviors.  When these classes were written, knowledge about our application was often times duplicated in multiple places; in other words, the code is not DRY.
+In Part 3 of the assessment, we'll refactor some provided code. Each class in the application has been tested for its behaviors.  When these classes were written, knowledge about our application was often times duplicated in multiple places; in other words, the code is not DRY.
 
 ## Release 0: Improve Code
-Each class in this part of the assessment is fully tested and all the tests pass.  Apply object-oriented principles to improve the quality of the code.
-
-Be sure that all tests continue to pass.  Do not modify the tests.
+Take a moment to review the classes and the corresponding behaviors. Now ask  yourself:
+* What code smells can you identify?
+* What are ways that you can remove these smells while keeping the intended behavior?
 
 This part of the assessment is completed when you've refactored the code as best you know how.
+
+Be sure that all tests continue to pass.  Do not modify the tests.
 
 ## Conclusion
 Once you've made all the changes that you find improve the code, you have completed Part 3 of the assessment.  If you haven't done so already, commit your changes and move on to Part 4.
