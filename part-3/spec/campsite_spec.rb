@@ -1,4 +1,4 @@
-require "spec_helper"
+require_relative "spec_helper"
 
 describe Campsite do
   let (:campsite) { Campsite.new(location: "2A", square_footage: 2400, power: false, water: true) }

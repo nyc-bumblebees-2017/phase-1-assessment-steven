@@ -1,4 +1,4 @@
-require "spec_helper"
+require_relative "spec_helper"
 
 describe Canteen do
   let(:canteen) { Canteen.new(capacity: 1.5, material: "polycarbonate") }

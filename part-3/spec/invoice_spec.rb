@@ -1,4 +1,4 @@
-require "spec_helper"
+require_relative "spec_helper"
 
 describe Invoice do
   let(:invoice) { Invoice.new(amount: 20.00, due_date: "10/12/2015", invoicee:  "Samantha Jackson") }

@@ -1,4 +1,4 @@
-require "spec_helper"
+require_relative "spec_helper"
 
 describe SleepingBag do
   let(:bag) { SleepingBag.new(style: "mummy", size: "adult", shell: "nylon") }
