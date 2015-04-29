@@ -3,6 +3,9 @@
 ## Summary
 In Part 3 of the assessment, we'll refactor some provided code.  A number of classes have been provided.  Each class is tested for its behaviors.  When these classes were written, knowledge about our application was often times duplicated in multiple places; in other words, the code is not DRY.
 
+## Running the Tests
+If you have questions on how to run the tests, please check the [rspec-help](../rspec-help.md) document.
+
 ## Release 0: Improve Code
 Each class in this part of the assessment is fully tested and all the tests pass.  Apply object-oriented principles to improve the quality of the code.
 

@@ -11,6 +11,9 @@ The `SockDrawer` class is somewhat complete.  We can initialize an instance of `
 - A sock drawer will be able to match one of its socks to a given sock.
 - A sock drawer will be able to match two of its own socks.
 
+## Running the Tests
+If you have questions on how to run the tests, please check the [rspec-help](../rspec-help.md) document.
+
 ## Releases
 ### Release 0: `SockDrawer#match_for`
 In the tests for the `SockDrawer` class is an example group `"#match_for"` that describes what should happen when a sock drawer matches one of its socks to a given sock.  Run the tests.  The three tests in the example group should be failing.  Update the `SockDrawer` class in `sock_drawer.rb` to make the tests pass.

@@ -7,19 +7,7 @@ In this challenge you will be defining a class that represents a road trip.  `Ro
 In the test suite you will notice various `double` objects.  These objects are meant to represent instances of a `Segment` class and provide objects with the behaviors on which a `RoadTrip` instance depends.  See `segment.rb` for the `Segment` class code.
 
 ## Running the Tests
-Assuming you are in the part-1 directory:
-To run all the tests, you can use:
-
-```bash
-rspec spec
-```
-
-To run the tests for a specific file, you can use:
-``` bash
-rsepc spec spec/<file_name_goes_here>_spec.rb
-```
-
-If you would like RSpec to stop running the tests as soon as it executes a failing test, you can use the `--fail-fast` option with either of the above commands. This will cut down on the output and may make it easier to read.
+If you have questions on how to run the tests, please check the [rspec-help](../rspec-help.md) document.
 
 
 ## Releases
