@@ -5,7 +5,7 @@ RSpec.describe RoadTrip do
   # The "double" objects in the segments array are objects
   # that behave like Segment objects. They will respond to calling miles.
   let(:segments) { [double('Segment', miles: 500), double('Segment', miles: 750)] }
-  let(:road_trip) { RoadTrip.new(name: 'Trip to SF', participants: %w(Juanita Sam Nadia), segments: segments) }
+  let(:road_trip) { RoadTrip.new(name: 'Trip to SF', segments: segments) }
 
   describe 'attributes' do
     it 'has a name' do
@@ -15,10 +15,6 @@ RSpec.describe RoadTrip do
     it 'allows updates to name' do
       road_trip.name = 'Trip to NYC'
       expect(road_trip.name).to eq 'Trip to NYC'
-    end
-
-    it 'has participants' do
-      expect(road_trip.participants).to match_array %w(Juanita Sam Nadia)
     end
 
     it 'has segments' do
