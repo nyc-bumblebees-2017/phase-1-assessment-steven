@@ -29,15 +29,15 @@ The three tests in the example group should be failing.  Update the `SockDrawer`
 *Do not modify the tests.*
 
 ### Release 1:  `SockDrawer#supply_random_pair_of_socks`
-In the tests for the `SockDrawer` class is an example group `"#supply_random_pair_of_socks"`.  The example group is currently marked as pending.
+Now pretend we need a pair of socks.  We don't have any particular sock for the sock drawer to match.  Instead, we want the sock drawer to give us any pair of socks that it can find among its socks.
 
-On Line 46, change `true` to `false`.  The line should then read ...
+A group of tests is provided to describe how an instance of `SockDrawer` behaves when told to supply a random pair of socks.  This group of tests is [tagged](https://www.relishapp.com/rspec/rspec-core/v/2-4/docs/command-line/tag-option) `supply_random_pair_of_socks`.  To run the tests specific to the `#supply_random_pair_of_socks` method, from the root directory run:
 
-```ruby
-describe "#supply_random_pair_of_socks", { pending: false } do
+```
+rspec --tag supply_random_pair_of_socks
 ```
 
-After making the change, run the tests to see the examples in this group fail.  Update the `SockDrawer` class in `sock_drawer.rb` to make the tests pass.
+Update the `SockDrawer` class in `sock_drawer.rb` to make the tests pass.
 
 *Do not modify the tests.*
 
