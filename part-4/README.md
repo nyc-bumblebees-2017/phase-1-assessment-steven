@@ -24,7 +24,6 @@ Copy the terminal output and paste the results into the `part-4/queries.md` file
 In your terminal, create and execute the following queries:
 - show all the books containing "Ruby" in the title
 - show the authors with a name starting with "Dav"
-- show all the books where the title contains "programming" and is not case sensitive
 
 Copy the terminal output and paste the results into the `part-4/queries.md` file.
 
