@@ -16,6 +16,8 @@ If you have questions on how to run the tests, please check the [rspec-help](../
 
 ## Releases
 ### Release 0: `SockDrawer#supply_match_for`
+Pretend we have a single sock and we need to find a match for it.  We believe that a matching sock is located in the sock drawer.  So, we're going to ask the sock drawer to give us the match for our sock.
+
 In the tests for the `SockDrawer` class is an example group `"#supply_match_for"` that describes what should happen when a sock drawer matches one of its socks to a given sock.  Run the tests.  The three tests in the example group should be failing.  Update the `SockDrawer` class in `sock_drawer.rb` to make the tests pass.
 
 *Do not modify the tests.*
