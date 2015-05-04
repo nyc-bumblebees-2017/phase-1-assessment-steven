@@ -1,12 +1,17 @@
 # Part 1:  Define a Class
 
 ## Summary
-In this challenge you will be defining a class that represents a road trip.  `RoadTrip` instances will have certain desired attributes and behaviors, which are described in the test suite (see `spec/road_trip_spec.rb`).
+In this challenge you will be defining a class that represents a road trip. A `RoadTrip` is made up of a collection of segments. A `RoadTrip` instance can answer questions like:
 
+* What is the total length of the trip?
+* What is the average segment mileage?
+
+
+## Tests
 ### Segments
 In the test suite you will notice various `double` objects.  These objects are meant to represent instances of a `Segment` class and provide objects with the behaviors on which a `RoadTrip` instance depends.  See `segment.rb` for the `Segment` class code.
 
-## Running the Tests
+### Running the Specs
 If you have questions on how to run the tests, please check the [rspec-help](../rspec-help.md) document.
 
 
