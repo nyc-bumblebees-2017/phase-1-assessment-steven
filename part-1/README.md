@@ -17,7 +17,7 @@ If you have questions on how to run the tests, please check the [rspec-help](../
 
 ## Releases
 ### Release 0:  `RoadTrip` Class Attributes
-In the tests for the `RoadTrip` class is an example group `"attributes"` that contains tests for the desired attributes for a `RoadTrip` instance.  Run the tests.  Four tests should be failing.  Update the `RoadTrip class` in `road_trip.rb` to make the tests pass.
+In the tests for the `RoadTrip` class is an example group `"attributes"` that contains tests for the desired attributes for a `RoadTrip` instance.  Run the tests. Three tests should be failing.  Update the `RoadTrip class` in `road_trip.rb` to make the tests pass.
 
 ### Release 1:  Working with Segments
 In the tests for the `RoadTrip` class is an example group `"working with segments"`.  The example group is currently marked as pending.
