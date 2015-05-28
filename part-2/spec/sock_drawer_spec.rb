@@ -20,7 +20,7 @@ describe SockDrawer do
     expect(drawer.matcher).to eq matcher
   end
 
-  describe "#supply_match_for" do
+  describe "#supply_match_for", { supply_match_for: true } do
     let(:right_red_sock) { Sock.new(brand: "Nike", style: "quarter", color: "red") }
 
     context "when it has a matching sock" do
@@ -43,7 +43,7 @@ describe SockDrawer do
     end
   end
 
-  describe "#supply_random_pair_of_socks", { pending: true } do
+  describe "#supply_random_pair_of_socks", { supply_random_pair_of_socks: true } do
     context "when it has one or more pairs of matching socks" do
       it "returns one of its pairs of socks" do
         expect(drawer.supply_random_pair_of_socks).to match_array [left_white_sock, right_white_sock]
