@@ -8,8 +8,6 @@ In this challenge you will be defining a class that represents a road trip. A `R
 
 
 ## Tests
-### Segments
-In the test suite you will notice various `double` objects.  These objects are meant to represent instances of a `Segment` class and provide objects with the behaviors on which a `RoadTrip` instance depends.  See `segment.rb` for the `Segment` class code.
 
 ### Running the Specs
 If you have questions on how to run the tests, please check the [rspec-help](../rspec-help.md) document.
