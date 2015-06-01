@@ -3,9 +3,9 @@ class Segment
   attr_reader :origin, :destination, :miles
 
   def initialize(args = {})
-    @origin = args.fetch(:origin)
-    @destination = args.fetch(:destination)
-    @miles = args.fetch(:miles)
+    @origin = args[:origin]
+    @destination = args[:destination]
+    @miles = args[:miles]
   end
 
 end
