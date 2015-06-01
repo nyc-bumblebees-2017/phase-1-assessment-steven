@@ -1,4 +1,5 @@
 require_relative '../road_trip'
+require_relative '../segment'
 
 RSpec.describe RoadTrip do
   let(:segments) { [Segment.new(miles: 500), Segment.new(miles: 750)] }
