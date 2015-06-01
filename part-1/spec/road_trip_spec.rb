@@ -4,7 +4,7 @@ RSpec.describe RoadTrip do
 
   # The "double" objects in the segments array are objects
   # that behave like Segment objects. They will respond to calling miles.
-  let(:segments) { [double('Segment', miles: 500), double('Segment', miles: 750)] }
+  let(:segments) { [Segment.new(miles: 500), Segment.new(miles: 750)] }
   let(:road_trip) { RoadTrip.new(name: 'Trip to SF', segments: segments) }
 
   describe 'attributes' do
