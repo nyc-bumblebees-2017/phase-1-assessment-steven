@@ -7,7 +7,7 @@ describe SockDrawer do
   let(:left_red_sock)    { Sock.new(brand: "Nike", style: "quarter", color: "red") }
   let(:left_black_sock)    { Sock.new(brand: "Nike", style: "quarter", color: "black") }
 
-  let(:matcher) { SockMatcher }
+  let(:matcher) { SockMatcher.new }
 
   let(:drawer) { SockDrawer.new(socks: socks, matcher: matcher) }
 

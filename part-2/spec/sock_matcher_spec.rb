@@ -9,7 +9,7 @@ describe SockMatcher do
 
   let(:shirt) { double("Shirt", class: "shirt", brand: "Gold Toe", style: "mid-calf", color: "black") }
 
-  let(:matcher) { SockMatcher }
+  let(:matcher) { SockMatcher.new }
 
   it "matches socks with the same brand, color, and style" do
     expect(matcher.match? sock, matching_sock).to be true
