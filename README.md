@@ -13,7 +13,7 @@ Do not build more complexity than is explicitly required. We are not impressed b
 
 - [Part 1 - Define a Class](part-1/)
 - [Part 2 - Work with a Collection](part-2/)
-- [Part 3 - Refactor](part-3/)
+- [Part 3 - Object-Oriented Design](part-3/)
 - [Part 4 - SQL Queries](part-4/)
 - [Part 5 - Schema Design](part-5/)
 
