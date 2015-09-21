@@ -1,6 +1,6 @@
 class Product
 
-  attr_reader :categories
+  attr_reader :categories, :orders
   attr_accessor :name, :description
 
   def initialize(args = {})
