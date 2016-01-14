@@ -9,6 +9,7 @@ class ShippingAddress
     @state = args.fetch(:state)
     @zip_code = args.fetch(:zip_code)
     @label = args.fetch(:label) # home, work, etc
+    @orders = []
 
     self.customer = options.fetch(:customer)
   end
