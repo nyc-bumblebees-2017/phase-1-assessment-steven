@@ -20,7 +20,7 @@ In the tests for the `RoadTrip` class is an example group `"attributes"` that co
 ### Release 1:  Working with Segments
 In the tests for the `RoadTrip` class is an example group `"working with segments"`.  The example group is currently marked as pending.
 
-On Line 27, change `true` to `false`.  The line should then read ...
+On Line 23, change `true` to `false`.  The line should then read ...
 
 ```ruby
 describe 'working with segments', { pending: false } do
