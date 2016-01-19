@@ -1,4 +1,4 @@
-class Canteen
+class WaterBottle
   attr_reader :capacity, :material
 
   def initialize(args = {})
