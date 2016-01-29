@@ -13,10 +13,10 @@ The `SockDrawer` class is somewhat complete.  We can initialize an instance of `
 - A sock drawer will be able to match a given sock to one of the socks in its
   collection, return the matched sock, and ensure the matched sock is removed
   from the collection. If no match is found, this method should return `nil`.
-  This method should be called `SockDrawer#match_for`.
+  This method should be called `SockDrawer#supply_match_for`.
 - A sock drawer will be able to produce a random pair of matched socks, return
   that pair, and ensure the two socks of the pair are removed from the
-  collection. This method will be called `SockDrawer.random_pair`.
+  collection. This method will be called `SockDrawer.supply_random_pair_of_socks`.
 
 The releases will guide you through using RSpec to help validate that your
 implementation meets these provided expectations.
