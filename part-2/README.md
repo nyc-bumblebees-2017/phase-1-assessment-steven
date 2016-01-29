@@ -34,7 +34,7 @@ rspec --tag supply_match_for
 
 The three tests in the example group should be failing.  Update the `SockDrawer` class in `sock_drawer.rb` to make the tests pass.
 
-*Do not modify the tests.*
+*Do not modify the tests. Do not modify the SockMatcher class.*
 
 ### Release 1:  `SockDrawer#supply_random_pair_of_socks`
 Now pretend we need a pair of socks.  We don't have any particular sock for the sock drawer to match.  Instead, we want the sock drawer to give us any pair of socks that it can find among its socks.
@@ -47,7 +47,7 @@ rspec --tag supply_random_pair_of_socks
 
 Update the `SockDrawer` class in `sock_drawer.rb` to make the tests pass.
 
-*Do not modify the tests.*
+*Do not modify the tests. Do not modify the SockMatcher class.*
 
 ## Conclusion
 Once all the tests have passed, you have completed Part 2 of the assessment.  If you haven't done so already, commit your changes and move on to Part 3.
