@@ -8,8 +8,16 @@ The `Sock` and `SockMatcher` classes have been written for us.  Furthermore, tes
 ### `SockDrawer`
 The `SockDrawer` class is somewhat complete.  We can initialize an instance of `SockDrawer` with a collection of socks and a matcher.  The challenge for this part of the assessment is to write methods that provide a `SockDrawer` instance with ways of interacting with its socks.  The desired behaviors have been described in tests:
 
-- A sock drawer will be able to match one of its socks to a given sock.
-- A sock drawer will be able to match two of its own socks.
+- A sock drawer will be able to match a given sock to one of the socks in its
+  collection, return the matched sock and ensure the matched sock is removed
+  from the collection. If no match is found, this method should return `nil`.
+  This method should be called `SockDrawer#match_for`.
+- A sock drawer will be able to produce a random pair of matched socks, return
+  that pair, and ensure the two socks of the pair are removed from the
+  collection. This method will be called `SockDrawer.random_pair`.
+
+The releases will guide you through using RSpec to help validate that your
+implementation meets these provided expectations.
 
 ## Running the Tests
 If you have questions on how to run the tests, please check the [rspec-help](../rspec-help.md) document.
