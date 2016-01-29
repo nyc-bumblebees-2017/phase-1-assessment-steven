@@ -11,7 +11,7 @@ The `Sock` and `SockMatcher` classes have been written for us.  Furthermore, tes
 The `SockDrawer` class is somewhat complete.  We can initialize an instance of `SockDrawer` with a collection of socks and a matcher.  The challenge for this part of the assessment is to write methods that provide a `SockDrawer` instance with ways of interacting with its socks.  The desired behaviors have been described in tests, but are summaraized here, in English:
 
 - A sock drawer will be able to match a given sock to one of the socks in its
-  collection, return the matched sock and ensure the matched sock is removed
+  collection, return the matched sock, and ensure the matched sock is removed
   from the collection. If no match is found, this method should return `nil`.
   This method should be called `SockDrawer#match_for`.
 - A sock drawer will be able to produce a random pair of matched socks, return
