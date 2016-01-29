@@ -6,7 +6,6 @@ class Customer
   def initialize(args = {})
     @first_name = args.fetch(:first_name)
     @last_name = args.fetch(:last_name)
-    @orders = []
     @shipping_addresses = []
   end
 
