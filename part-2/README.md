@@ -16,7 +16,7 @@ The `SockDrawer` class is somewhat complete.  We can initialize an instance of `
   This method should be called `SockDrawer#supply_match_for`.
 - A sock drawer will be able to produce a random pair of matched socks, return
   that pair, and ensure the two socks of the pair are removed from the
-  collection. This method will be called `SockDrawer.supply_random_pair_of_socks`.
+  collection. This method will be called `SockDrawer#supply_random_pair_of_socks`.
 
 The releases will guide you through using RSpec to help validate that your
 implementation meets these provided expectations.
