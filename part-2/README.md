@@ -10,7 +10,7 @@ The `Sock` and `SockMatcher` classes have been written for us.  Furthermore, tes
 
 The `SockDrawer` class is somewhat complete.  We can initialize an instance of `SockDrawer` with a collection of socks and a matcher.  The challenge for this part of the assessment is to write methods that provide a `SockDrawer` instance with ways of interacting with its socks.  The desired behaviors have been described in tests, but are summaraized here, in English:
 
-- A sock drawer will be able to match a given sock to one of the socks in its
+- A drawer will be able to match a given sock to one of the socks in its
   collection, return the matched sock, and ensure the matched sock is removed
   from the collection. If no match is found, this method should return `nil`.
   This method should be called `SockDrawer#supply_match_for`.
@@ -36,7 +36,7 @@ rspec --tag supply_match_for
 
 The three tests in the example group should be failing.  Update the `SockDrawer` class in `sock_drawer.rb` to make the tests pass.
 
-*Do not modify the tests. Do not modify the SockMatcher class.*
+**Do not modify the tests and do not modify the SockMatcher class.**
 
 ### Release 1:  `SockDrawer#supply_random_pair_of_socks`
 Now pretend we need a pair of socks.  We don't have any particular sock for the sock drawer to match.  Instead, we want the sock drawer to give us any pair of socks that it can find among its socks.
@@ -49,7 +49,7 @@ rspec --tag supply_random_pair_of_socks
 
 Update the `SockDrawer` class in `sock_drawer.rb` to make the tests pass.
 
-*Do not modify the tests. Do not modify the SockMatcher class.*
+**Do not modify the tests and do not modify the SockMatcher class.**
 
 ## Conclusion
 Once all the tests have passed, you have completed Part 2 of the assessment.  If you haven't done so already, commit your changes and move on to Part 3.
