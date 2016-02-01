@@ -8,11 +8,6 @@ class Order
     @products = []
   end
 
-  def customer=(customer)
-    @customer = customer
-    customer.add_order(self)
-  end
-
   def add_product(product)
     products << product
     product.add_order(self)
