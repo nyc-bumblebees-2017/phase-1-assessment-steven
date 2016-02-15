@@ -25,7 +25,8 @@ In your terminal, create and execute the following queries:
 - show all the publishers
 - show all the authors
 
-Copy the terminal output and paste the results into the `part-4/queries.md` file.
+Copy the query statement as well as the terminal output and paste the results
+into the `part-4/queries.md` file.
 
 ### Release 1: `WHERE`
 
@@ -34,7 +35,8 @@ In your terminal, create and execute the following queries:
 - show the authors with a name starting with "Dav"
 - show all the books where the title contains "programming" and is not case sensitive
 
-Copy the terminal output and paste the results into the `part-4/queries.md` file.
+Copy the query statement as well as the terminal output and paste the results
+into the `part-4/queries.md` file.
 
 ### Release 2: `JOIN`
 
@@ -44,23 +46,31 @@ In your terminal, create and execute the following queries:
 - show all the publishers where the book title contains "iOS"
 - show all the publishers for the author "Sandi Metz"
 
-Copy the terminal output and paste the results into the `part-4/queries.md` file.
+Copy the query statement as well as the terminal output and paste the results
+into the `part-4/queries.md` file.
 
 ### Release 3: `INSERT`
 
 In your terminal, create and execute the following queries:
 - add a new author to the authors table
 - add a new publisher to the publishers table
-- add a new book to the books table with the new author and publisher
+- add a new book to the books table with the new author and publisher you
+  created in release 3
 
-Copy the terminal output and paste the results into the `part-4/queries.md` file.
+Execute queries to perform the `INSERT` and paste them into
+`part-4/queries.md`. Also execute queries that verify your `INSERT` statements
+worked.  Paste the verifying queries and their results into
+`part-4/queries.md`.
 
 ### Release 4: `UPDATE`
 
 In your terminal, create and execute the following queries:
 - update the author named "David Black" to "David A. Black"
 
-Copy the terminal output and paste the results into the `part-4/queries.md` file.
+Execute queries to perform the `UPDATE` and paste them into
+`part-4/queries.md`. Also execute queries that verify your `UPDATE` statements
+worked.  Paste the verifying queries and their results into
+`part-4/queries.md`.
 
 ### Release 5: `DELETE`
 
@@ -69,7 +79,10 @@ In your terminal, create and execute the following queries:
 - Delete the author created in Release 3
 - Delete the publisher created in Release 3
 
-Copy the terminal output and paste the results into the `part-4/queries.md` file.
+Execute queries to perform the `DELETE` and paste them into
+`part-4/queries.md`. Also execute queries that verify your `DELETE` statements
+worked.  Paste the verifying queries and their results into
+`part-4/queries.md`.
 
 ## Conclusion
 
