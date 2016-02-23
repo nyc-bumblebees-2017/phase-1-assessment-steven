@@ -6,6 +6,13 @@ class Order
   def initialize(args = {})
     @shipping_address = args.fetch(:shipping_address)
     @products = []
+
+    self.customer = args.fetch(:customer)
+  end
+
+  def customer=(customer)
+    @customer = customer
+    customer.add_order(self)
   end
 
   def add_product(product)

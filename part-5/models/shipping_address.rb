@@ -1,7 +1,7 @@
 class ShippingAddress
 
-  attr_reader :customer
-  attr_accessor :orders, :street, :city, :state, :zip_code, :label
+  attr_reader :customer, :orders
+  attr_accessor :street, :city, :state, :zip_code, :label
 
   def initialize(args = {})
     @street = args.fetch(:street)
@@ -11,16 +11,16 @@ class ShippingAddress
     @label = args.fetch(:label) # home, work, etc
     @orders = []
 
-    @customer = args.fetch(:customer)
-  end
-
-  def add_order(order)
-    orders << order
+    self.customer = args.fetch(:customer)
   end
 
   def customer=(customer)
     @customer = customer
     customer.add_shipping_address(self)
+  end
+
+  def add_order(order)
+    orders << order
   end
 
 end
