@@ -15,6 +15,11 @@ class Order
     customer.add_order(self)
   end
 
+  def shipping_address=(shipping_address)
+    @shipping_address = shipping_address
+    shipping_address.add_order(self)
+  end
+
   def add_product(product)
     products << product
     product.add_order(self)
