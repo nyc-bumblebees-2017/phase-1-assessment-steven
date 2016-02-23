@@ -10,7 +10,7 @@ class Customer
     @shipping_addresses = []
   end
 
-  def add_order
+  def add_order(order)
     orders << order
   end
 
