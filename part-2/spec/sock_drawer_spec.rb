@@ -43,14 +43,14 @@ describe SockDrawer do
     end
   end
 
-  describe "#supply_random_pair_of_socks", { supply_random_pair_of_socks: true } do
+  describe "#supply_one_pair_of_socks", { supply_one_pair_of_socks: true } do
     context "when it has one or more pairs of matching socks" do
       it "returns one of its pairs of socks" do
-        expect(drawer.supply_random_pair_of_socks).to match_array [first_white_sock, second_white_sock]
+        expect(drawer.supply_one_pair_of_socks).to match_array [first_white_sock, second_white_sock]
       end
 
       it "removes paired socks from its collection of socks" do
-        drawer.supply_random_pair_of_socks
+        drawer.supply_one_pair_of_socks
 
         [first_white_sock, second_white_sock].each do |paired_sock|
           expect(drawer.socks).to_not include paired_sock
@@ -63,7 +63,7 @@ describe SockDrawer do
         non_matching_socks = [first_white_sock, first_red_sock]
         drawer_with_no_matching_socks = SockDrawer.new(socks: non_matching_socks, matcher: matcher)
 
-        expect(drawer_with_no_matching_socks.supply_random_pair_of_socks).to be_empty
+        expect(drawer_with_no_matching_socks.supply_one_pair_of_socks).to be_empty
       end
     end
   end

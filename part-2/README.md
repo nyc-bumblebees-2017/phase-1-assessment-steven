@@ -14,9 +14,9 @@ The `SockDrawer` class is somewhat complete.  We can initialize an instance of `
   collection, return the matched sock, and ensure the matched sock is removed
   from the collection. If no match is found, this method should return `nil`.
   This method should be called `SockDrawer#supply_match_for`.
-- A sock drawer will be able to produce a random pair of matched socks, return
+- A sock drawer will be able to produce an arbitrary pair of matched socks, return
   that pair, and ensure the two socks of the pair are removed from the
-  collection. This method will be called `SockDrawer#supply_random_pair_of_socks`.
+  collection. This method will be called `SockDrawer#supply_one_pair_of_socks`.
 
 The releases will guide you through using RSpec to help validate that your
 implementation meets these provided expectations.
@@ -38,13 +38,15 @@ The three tests in the example group should be failing.  Update the `SockDrawer`
 
 **Do not modify the tests and do not modify the SockMatcher class.**
 
-### Release 1:  `SockDrawer#supply_random_pair_of_socks`
+### Release 1:  `SockDrawer#supply_one_pair_of_socks`
 Now pretend we need a pair of socks.  We don't have any particular sock for the sock drawer to match.  Instead, we want the sock drawer to give us any pair of socks that it can find among its socks.
 
-A group of tests is provided to describe how an instance of `SockDrawer` behaves when told to supply a random pair of socks.  This group of tests is [tagged](https://www.relishapp.com/rspec/rspec-core/v/2-4/docs/command-line/tag-option) `supply_random_pair_of_socks`.  To run the tests specific to the `#supply_random_pair_of_socks` method, from the root directory run:
+A group of tests is provided to describe how an instance of `SockDrawer` behaves when told to supply an arbitrary pair of socks.  This group of tests is
+[tagged](https://www.relishapp.com/rspec/rspec-core/v/2-4/docs/command-line/tag-option)
+`supply_one_pair_of_socks`.  To run the tests specific to the `#supply_one_pair_of_socks` method, from the root directory run:
 
 ```
-rspec --tag supply_random_pair_of_socks
+rspec --tag supply_one_pair_of_socks
 ```
 
 Update the `SockDrawer` class in `sock_drawer.rb` to make the tests pass.
