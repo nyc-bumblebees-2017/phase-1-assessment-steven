@@ -27,6 +27,13 @@ RSpec.describe RoadTrip do
         road_trip.add_segment(new_segment)
         expect(road_trip.segments).to include new_segment
       end
+
+      it 'retains segments already in the segment collection' do
+        original_segments = road_trip.segments.dup
+        new_segment = Segment.new
+        road_trip.add_segment(new_segment)
+        expect(road_trip.segments).to match_array (original_segments + [new_segment])
+      end
     end
 
     describe 'distance calculations' do
