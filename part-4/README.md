@@ -22,8 +22,6 @@ $ sqlite3 bookshelf.sqlite
 In your terminal, create and execute the following queries:
 
 - show all the books
-- show all the publishers
-- show all the authors
 
 Copy the query statement as well as the terminal output and paste the results
 into the `part-4/queries.md` file.
