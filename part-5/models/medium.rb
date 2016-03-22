@@ -1,16 +1,15 @@
-class Category
+class Medium
 
   attr_accessor :name, :description
-  attr_reader :products
+  attr_reader :artworks
 
   def initialize(args = {})
     @name = args.fetch(:name)
     @description = args.fetch(:descriptions)
-    @products = []
+    @artworks = []
   end
 
-  def add_product(product)
-    products << product
-    product.add_category(self)
+  def add_artworks(artwork)
+    artwork << artwork
   end
 end
