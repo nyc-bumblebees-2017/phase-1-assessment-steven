@@ -16,7 +16,7 @@ class Artwork
   end
 
   def add_medium(medium)
-    mediums<< medium
+    mediums << medium
   end
 
 end

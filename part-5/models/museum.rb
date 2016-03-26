@@ -1,5 +1,4 @@
 class Museum
-
   attr_accessor :name, :website
   attr_reader :exhibitions
 

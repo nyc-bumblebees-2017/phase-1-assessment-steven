@@ -1,5 +1,4 @@
 class Medium
-
   attr_accessor :name, :description
   attr_reader :artworks
 

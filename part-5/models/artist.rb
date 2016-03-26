@@ -1,5 +1,4 @@
 class Artist
-
   attr_reader :name, :artworks
 
   def initialize(args = {})
