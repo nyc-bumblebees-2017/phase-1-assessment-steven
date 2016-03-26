@@ -8,7 +8,7 @@ class Artist
   end
 
   def add_artwork(song)
-    @artworks << artwork
+    artworks << artwork
   end
 
 end
