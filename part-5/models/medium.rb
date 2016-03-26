@@ -10,6 +10,6 @@ class Medium
   end
 
   def add_artworks(artwork)
-    artwork << artwork
+    artworks << artwork
   end
 end
