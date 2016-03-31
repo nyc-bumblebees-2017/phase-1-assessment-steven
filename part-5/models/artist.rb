@@ -6,7 +6,7 @@ class Artist
     @artworks = []
   end
 
-  def add_artwork(song)
+  def add_artwork(artwork)
     artworks << artwork
   end
 
