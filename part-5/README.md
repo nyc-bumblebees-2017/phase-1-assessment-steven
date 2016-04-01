@@ -10,9 +10,7 @@ The basis of this application is an online store. This has been simplified to tr
 For this part of the assessment, we'll need to create and submit an image file of the designed database schema.  Designing the schema using [SQL Designer](http://schemadesigner.devbootcamp.com) and submitting a screenshot of the final design is the suggested method for completing this challenge.  However, drawing your schema using another medium (e.g., pen and paper) is also acceptable, provided the visualization is legible and an image file depicting the final schema design can be added to the repo (e.g., a photo).
 
 ## Release 0: Model Attributes
-Create the required tables with the corresponding columns that would support the data requirements of each model found in the `part-5/models` directory.  
-
-Note: one of the models uses the term "medium". A medium is a [material](https://en.wikipedia.org/wiki/List_of_artistic_media) used by an artist to create a work of art.
+Create the required tables with the corresponding columns that would support the data requirements of each model found in the `part-5/models` directory.
 
 ## Release 1: Relationships
 Add the supporting foreign keys and/or join tables to allow the required one-to-many and many-to-many relationships.
