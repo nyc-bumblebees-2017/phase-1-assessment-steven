@@ -8,7 +8,7 @@ class Medium
 
   def initialize(args = {})
     @name = args.fetch(:name)
-    @description = args.fetch(:descriptions)
+    @description = args.fetch(:description)
     @artworks = []
   end
 
