@@ -12,26 +12,26 @@ describe SockMatcher do
   let(:matcher) { SockMatcher.new }
 
   it "matches socks with the same brand, color, and style" do
-    expect(matcher.match? sock, matching_sock).to be true
+    expect(matcher.match?(sock, matching_sock)).to be true
   end
 
   it "doesn't match socks with different brands" do
-    expect(matcher.match? sock, other_brand_sock).to be false
+    expect(matcher.match?(sock, other_brand_sock)).to be false
   end
 
   it "doesn't match socks with different styles" do
-    expect(matcher.match? sock, other_style_sock).to be false
+    expect(matcher.match?(sock, other_style_sock)).to be false
   end
 
   it "doesn't match socks with different colors" do
-    expect(matcher.match? sock, other_color_sock).to be false
+    expect(matcher.match?(sock, other_color_sock)).to be false
   end
 
   it "doesn't match a sock with itself" do
-    expect(matcher.match? sock, sock).to be false
+    expect(matcher.match?(sock, sock)).to be false
   end
 
   it "only matches socks" do
-    expect(matcher.match? sock, shirt).to be false
+    expect(matcher.match?(sock, shirt)).to be false
   end
 end

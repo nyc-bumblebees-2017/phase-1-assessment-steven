@@ -25,7 +25,7 @@ describe SockDrawer do
 
     context "when it has a matching sock" do
       it "returns a matching sock" do
-        expect(drawer.supply_match_for second_red_sock).to eq first_red_sock
+        expect(drawer.supply_match_for(second_red_sock)).to eq first_red_sock
       end
 
       it "removes the matching sock from its collection of socks" do
@@ -38,7 +38,7 @@ describe SockDrawer do
       it "returns nothing" do
         first_yellow_sock = Sock.new(brand: "Nike", style: "quarter", color: "yellow")
 
-        expect(drawer.supply_match_for first_yellow_sock).to be_nil
+        expect(drawer.supply_match_for(first_yellow_sock)).to be_nil
       end
     end
   end
